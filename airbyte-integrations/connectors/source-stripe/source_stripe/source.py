@@ -282,7 +282,8 @@ class SourceStripe(YamlDeclarativeSource):
             **args,
         )
 
-        # TODO: Remove all implementation related to Python connectors once this issue will be solved
+        # TODO: Remove all Python connector-related implementations once this issue is resolved –
+        #  https://github.com/airbytehq/oncall/issues/7876
 
         streams = [
             UpdatedCursorIncrementalStripeLazySubStream(
